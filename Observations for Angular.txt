@@ -1,0 +1,13 @@
+#1
+Observable.of is not working
+instead of(-) is working
+
+#2
+Angular 5 onwards catch is not working,
+instead catchError with piping is working.
+sample: this.httpClient.get<Employee[]>('http://localhost:3000/employees1').pipe(catchError(this.handleError));
+
+#3
+ErrorObservale is not working to return error from handleError method in http,
+instead throwError is working.
+sample : return throwError('There is a problem with the service! We are notified and working on it. Please try again later.');

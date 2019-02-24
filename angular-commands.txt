@@ -1,0 +1,13 @@
+npm install jquery --save
+
+npm install --save-dev @types/jquery
+
+npm install popper.js --save
+
+npm install --save @ng-bootstrap/ng-bootstrap
+
+npm install bootstrap
+
+npm install --save font-awesome angular-font-awesome
+
+npm install ngx-bootstrap --save

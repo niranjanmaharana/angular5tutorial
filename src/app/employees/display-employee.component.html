@@ -1,0 +1,66 @@
+<app-accordion-component [title]="employee.name" [hasJustViewed]="_lastId == employee.id">
+  <div class="panel-body accordion-panel-body" [hidden]="panelExpanded">
+    <div class="col-xs-10">
+      <div class="row vertical-align">
+        <div class="col-xs-4">
+          <img [src]='employee.photoPath' class="employee-photo">
+        </div>
+        <div class="col-xs-8">
+          <div class="row vertical-align">
+            <div class="col-xs-4 ">Gender</div>
+            <div class="col-xs-8 text-capitalize"> : {{employee.gender}}</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">Date of Birth</div>
+            <div class="col-xs-8"> : {{employee.dateOfBirth | date}}</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">Contact Preference</div>
+            <div class="col-xs-8 text-capitalize"> : {{employee.contactPreference}}</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">Phone Number</div>
+            <div class="col-xs-8"> : {{employee.phoneNumber}}</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">Email</div>
+            <div class="col-xs-8"> : {{employee.email}}</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">Department</div>
+            <div class="col-xs-8 text-capitalize"> : {{employee.department}}</div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">Qualification</div>
+            <div class="col-xs-8 text-capitalize" [ngSwitch]="employee.education">
+              :
+              <span *ngSwitchCase="1">M.Tech.</span>
+              <span *ngSwitchCase="2">B.Tech.</span>
+              <span *ngSwitchCase="3">Diploma</span>
+              <span *ngSwitchCase="4">Matric</span>
+              <span *ngSwitchDefault>NA</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">Active</div>
+            <div class="col-xs-8 text-capitalize"> : {{employee.isActive}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-panel-footer" [hidden]="panelExpanded">
+    <button class="btn btn-primary" (click)="onViewEmployeeClick()">View</button>
+    <button class="btn btn-primary" (click)="onEditEmployeeClick()">Edit</button>
+    <span *ngIf="confirmDelete">
+      <span class='alert'>Are you sure you want to delete?</span>
+      <span>
+        <button class="btn btn-danger" (click)="onDeleteEmployeeClick()">Yes</button>
+      </span>
+      <span>
+        <button class="btn btn-danger" (click)="confirmDelete = false">No</button>
+      </span>
+    </span>
+    <button class="btn btn-danger" *ngIf="!confirmDelete" (click)="confirmDelete = true">Delete</button>
+  </div>
+</app-accordion-component>

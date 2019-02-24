@@ -1,0 +1,79 @@
+{
+  "employees": [
+    {
+      "id": 101,
+      "name": "Smith",
+      "gender": "male",
+      "email": "smith@gmail.com",
+      "phoneNumber": "9556824846",
+      "contactPreference": "email",
+      "dateOfBirth": "04/26/1993",
+      "department": 3,
+      "education": 1,
+      "isActive": true,
+      "photoPath": "assets/images/male.png"
+    },
+    {
+      "id": 102,
+      "name": "James",
+      "gender": "male",
+      "email": "james@gmail.com",
+      "phoneNumber": "9337079036",
+      "contactPreference": "phone",
+      "dateOfBirth": "01/01/1996",
+      "department": 3,
+      "education": 4,
+      "isActive": false,
+      "photoPath": "assets/images/male.png"
+    },
+    {
+      "id": 103,
+      "name": "Cathy",
+      "gender": "female",
+      "email": "cathy@gmail.com",
+      "phoneNumber": "9337079036",
+      "contactPreference": "phone",
+      "dateOfBirth": "01/01/1995",
+      "department": 3,
+      "education": 5,
+      "isActive": false,
+      "photoPath": "assets/images/female.png"
+    },
+    {
+      "id": 104,
+      "name": "Jerry",
+      "email": "jerry@gmail.com",
+      "gender": "male",
+      "contactPreference": "email",
+      "isActive": true,
+      "department": "1",
+      "education": "1",
+      "dateOfBirth": "2019-01-27T17:05:51.179Z",
+      "photoPath": "assets/images/male.png"
+    },
+    {
+      "id": 105,
+      "name": "Sue",
+      "email": "sue@gmail.com",
+      "gender": "female",
+      "contactPreference": "email",
+      "isActive": true,
+      "department": "1",
+      "education": "1",
+      "dateOfBirth": "2019-01-27T17:11:14.929Z",
+      "photoPath": "assets/images/female.png"
+    },
+    {
+      "id": 106,
+      "name": "Venki",
+      "email": "venki@gmail.com",
+      "gender": "male",
+      "contactPreference": "email",
+      "isActive": true,
+      "department": "1",
+      "education": "1",
+      "dateOfBirth": "2019-01-27T17:13:14.531Z",
+      "photoPath": "assets/images/male.png"
+    }
+  ]
+}
